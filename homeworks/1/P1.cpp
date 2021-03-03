@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void print_prime_nanbers (int n) {
+void print_prime_numbers (int n) {
 	vector<int> primes;
 	int k = 0;
 	int p = 3;
@@ -29,5 +29,5 @@ void print_prime_nanbers (int n) {
 int main() {
 	int n;
 	cin >> n;
-	print_prime_nanbers(n);
+	print_prime_numbers(n);
 }
