@@ -1,0 +1,5 @@
+ИиП: http://judge.gltronred.info/cgi-bin/new-client?contest_id=2
+АиСД: http://judge.gltronred.info/cgi-bin/new-client?contest_id=3
+
+Username: hasanova
+Password: baep4ahw
