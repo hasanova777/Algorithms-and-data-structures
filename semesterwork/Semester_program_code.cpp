@@ -1,3 +1,35 @@
+/*
+    Задача:
+
+    Посчитать количество различных слов в тексте и вывести список слов с числом их
+    вхождений. Для решения данной задачи использовалась структура данных AA-дерево.
+
+    1) Слова из исходного текста добавляются в AA-дерево при помощи метода
+    void insert(string key, int value). При этом в качестве ключа используется само
+    слово, а в качестве значения - сколько раз оно встречалось, то есть при первом
+    добавлении слова value равно 1, а при каждом последующем value увеличивается на 1.
+    Перед вставкой слова в дерево вызывается метод int search(string key) для
+    определения текущего значения value для добавляемого слова.
+
+    2) После вставки всех слов в AA-дерево, структура данных будет хранить в своих
+    узлах весь набор слов текста (с соответствующим числом вхождений). Для вывода
+    слов в алфавитном порядке используется метод AANode* min(), извлекающий из
+    AA-дерева узел с наименьшим значением ключа (так как ключи типа string, то их
+    сравнение происходит в лексикографическом порядке). После нахождения узла с
+    минимальным ключом производится печать в консоль ключа и значения, хранившихся в
+    узле, и удаление данного узла из AA-дерева при помощи метода bool remove(string key).
+
+    Замечание 1. Исходный текст для задачи может быть дан в виде строки, введённой из
+    консоли, или же сгенерирован каким-либо образом. Слова из исходного текста перед
+    вставкой в AA-дерево парсятся в vector<string> words. В тестах, написанных к данной
+    задаче, вектор words заполняется словами, сгенерированными псевдослучайным образом
+    при помощи метода string generate_word(), реализованного на основе работы метода rand().
+
+    Замечание 2. Время работы методов AA-дерева, использующихся для решения выше описанной
+    задачи, а также время, затраченное на всё решение задачи, измеряется при помощи
+    инструментов стандартной библиотеки chrono.
+*/
+
 #include <iostream>
 #include <sstream>
 #include <vector>
@@ -35,20 +67,22 @@ private:
     int search_helper(AANode*, string);
 };
 
-// конструктор класса AATree
+/*
+    конструктор класса AATree
+*/
+
 AATree::AATree() {
     root = new AANode;
     root = nullptr;
 }
 
-// деструктор класса AATree
+/*
+    деструктор класса AATree
+*/
+
 AATree::~AATree() {
     dealloc_memory(root);
 }
-
-/*
-    метод dealloc_memory освобождает память вершин дерева
-*/
 
 void AATree::dealloc_memory(AANode* N) {
     if (N == nullptr) {
@@ -60,7 +94,12 @@ void AATree::dealloc_memory(AANode* N) {
 }
 
 /*
-    методы insert и insert_helper осуществляют вставку вершины в дерево
+    реализация метода insert, который выполняет алгоритм "вставки" узлов;
+    алгоритм осуществляется следующим способом:
+    1. добавление узла на первый уровень
+    2. вызов метода skew (для устранения горизонтальной левой связи)
+    3. вызов метода split (для устранения двух горизонтальных правых связей,
+    возможно, увеличивающее уровень нового корневого узла текущего поддерева)
 */
 
 void AATree::insert(string key, int value) {
@@ -108,7 +147,7 @@ AANode* AATree::insert_helper(AANode* temp, AANode* ins) {
 }
 
 /*
-    методы remove и remove_helper осуществляют удаление текущей вершины в дереве
+    реализация метода remove, который осуществляет удаление узлов в дереве
 */
 
 bool AATree::remove(string key) {
@@ -155,10 +194,9 @@ bool AATree::remove_helper(AANode* parent, AANode* current, string key) {
 }
 
 /*
-    реализация метода skew(AANode* temp), который устраняет левую связь на одном уровне;
-    данный метод устроняет горизонтальную левую связь при помощи вращения узла вправо
+    реализация метода skew, который устраняет левую связь на одном уровне; данный
+    метод устроняет горизонтальную левую связь при помощи вращения узла вправо
     каждый раз, когда найдена горизонтальная левая связь
-
 */
 
 void AATree::skew(AANode* temp) {
@@ -180,10 +218,10 @@ void AATree::skew(AANode* temp) {
 }
 
 /*
-  реализация метода split(AANode* temp), который устраняет две правых связи на одном уровне;
-  данный метод устроняет две последовательные правые горизонтальные связи при помощи вращения
-  узла влево и увеличения уровня среднего узна на единицу
-
+  реализация метода split, который устраняет две правых связи на одном уровне;
+  данный метод устроняет две последовательные правые горизонтальные связи при
+  помощи вращения узла влево на одно, содержащее две меньших последовательных
+  правых горизонтальных связи
 */
 
 bool AATree::split(AANode* temp) {
@@ -209,10 +247,8 @@ bool AATree::split(AANode* temp) {
 }
 
 /*
-    метод balance осуществляет правильную вставку по алгоритму:
-    1. добавляется новая вершина
-    2. вызывается метод skew
-    3. вызывается метод split
+    реализация метода balance, который делает дерево сбалансированным при помощи
+    методов split и skew (достаточные методы для сбалансированного дерева)
 */
 
 void AATree::balance(AANode* temp) {
@@ -238,7 +274,7 @@ void AATree::balance(AANode* temp) {
 }
 
 /*
-    методы search и search_helper осуществляют поиск нужного узла
+    реализация метода search, токорый осуществляет поиск вершины в дереве
 */
 
 int AATree::search(string key) {
@@ -261,6 +297,10 @@ int AATree::search_helper(AANode* temp, string key) {
     return 0;
 }
 
+/*
+    поиск минимальной вершины в дереве
+*/
+
 AANode* AATree::min() {
     AANode* N = root;
     if (N != nullptr) {
@@ -270,6 +310,10 @@ AANode* AATree::min() {
     }
     return N;
 }
+
+/*
+    поиск максимальной вершины в дереве
+*/
 
 AANode* AATree::max() {
     AANode* N = root;
@@ -312,39 +356,68 @@ vector<string> split_string(string& str) {
     return words;
 }
 
-int main() {
-    //string text;
-    //getline(cin, text);
-    vector<string> words;
-    //words = split_string(text);
-    const char* letters[] = {"q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "a", "s", "d", 
-                        "f", "g", "h", "j", "k", "l", "z", "x", "c", "v", "b", "n", "m"};
-    for (int test = 1; test <= 50; test++) {
-        for (int i = 0; i < test * 200; i++) {
-            int length_of_word = (rand() % 7) + 1;
-            string word = "";
-            for (int j = 0; j < length_of_word; j++) {
-                word += letters[rand() % (sizeof letters / sizeof(char*))];
-            }
-            words.push_back(word);
-        }
+string generate_word() {
+    const char* letters[] = { "q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "a", "s", "d",
+                        "f", "g", "h", "j", "k", "l", "z", "x", "c", "v", "b", "n", "m" };
+    int length_of_word = (rand() % 7) + 1;
+    string word = "";
+    for (int j = 0; j < length_of_word; j++) {
+        word += letters[rand() % (sizeof letters / sizeof(char*))];
+    }
+    return word;
+}
+
+void task_test(vector<string>& words, int number_of_test) {
+    cout << "Test #" << number_of_test << endl;
+    cout << "Input data size: " << number_of_test * 200 << " elements" << endl;
+    for (int j = 0; j < 5; j++) {
         auto start = high_resolution_clock::now();
         AATree* tree = new AATree();
-        for (int i = 0; i < words.size(); i++) {
+        for (int i = 0; i < words.size() - 1; i++) {
             int count = tree->search(words[i]) + 1;
             tree->insert(words[i], count);
         }
+        auto startSearch = high_resolution_clock::now();
+        int count = tree->search(words[words.size() - 1]) + 1;
+        auto stopSearch = high_resolution_clock::now();
+        cout << "search: " << duration_cast<microseconds>(stopSearch - startSearch).count() << "; ";
+        auto startInsert = high_resolution_clock::now();
+        tree->insert(words[words.size() - 1], count);
+        auto stopInsert = high_resolution_clock::now();
+        cout << "insert: " << duration_cast<microseconds>(stopInsert - startInsert).count() << "; ";
+        auto startMin = high_resolution_clock::now();
         AANode* min_node = tree->min();
+        auto stopMin = high_resolution_clock::now();
+        cout << "min: " << duration_cast<microseconds>(stopMin - startMin).count() << "; ";
+        if (min_node != nullptr) {
+            //cout << min_node->key << ": " << min_node->value << endl;
+            auto startRemove = high_resolution_clock::now();
+            tree->remove(min_node->key);
+            auto stopRemove = high_resolution_clock::now();
+            cout << "remove: " << duration_cast<microseconds>(stopRemove - startRemove).count() << "; ";
+            min_node = tree->min();
+        }
         while (min_node != nullptr) {
             //cout << min_node->key << ": " << min_node->value << endl;
             tree->remove(min_node->key);
             min_node = tree->min();
         }
-        auto stop = high_resolution_clock::now();
-        auto duration = duration_cast<milliseconds>(stop - start);
-        cout << test * 200 << " " << duration.count() << endl;
-        words.clear();
         tree->~AATree();
+        auto stop = high_resolution_clock::now();
+        cout << "task: " << duration_cast<microseconds>(stop - start).count() << endl;
     }
-    return 0;    
+}
+
+int main() {
+    vector<string> words;
+    //string text;
+    //getline(cin, text);
+    //words = split_string(text);
+    for (int test = 1; test <= 50; test++) {
+        for (int i = 0; i < 200; i++) {
+            words.push_back(generate_word());
+        }
+        task_test(words, test);
+    }
+    return 0;
 }

@@ -1,0 +1,350 @@
+Test #1
+Input data size: 200 elements
+search: 16; insert: 12; min: 0; remove: 18; task: 14227
+search: 18; insert: 9; min: 0; remove: 16; task: 13333
+search: 19; insert: 10; min: 0; remove: 15; task: 13965
+search: 20; insert: 11; min: 0; remove: 17; task: 14525
+search: 18; insert: 13; min: 0; remove: 18; task: 14906
+Test #2
+Input data size: 400 elements
+search: 35; insert: 17; min: 0; remove: 27; task: 32668
+search: 32; insert: 19; min: 1; remove: 27; task: 29379
+search: 35; insert: 16; min: 0; remove: 29; task: 33571
+search: 36; insert: 22; min: 0; remove: 26; task: 34017
+search: 34; insert: 19; min: 1; remove: 27; task: 32614
+Test #3
+Input data size: 600 elements
+search: 42; insert: 22; min: 1; remove: 34; task: 51800
+search: 47; insert: 25; min: 0; remove: 35; task: 50288
+search: 49; insert: 24; min: 1; remove: 31; task: 49621
+search: 46; insert: 24; min: 0; remove: 34; task: 54455
+search: 45; insert: 24; min: 1; remove: 33; task: 52403
+Test #4
+Input data size: 800 elements
+search: 57; insert: 29; min: 1; remove: 39; task: 68738
+search: 51; insert: 26; min: 1; remove: 35; task: 74116
+search: 53; insert: 30; min: 1; remove: 38; task: 72490
+search: 56; insert: 28; min: 1; remove: 37; task: 72645
+search: 52; insert: 27; min: 0; remove: 39; task: 71751
+Test #5
+Input data size: 1000 elements
+search: 58; insert: 30; min: 1; remove: 41; task: 90363
+search: 59; insert: 32; min: 1; remove: 44; task: 95895
+search: 57; insert: 29; min: 1; remove: 40; task: 94906
+search: 62; insert: 28; min: 1; remove: 41; task: 93742
+search: 60; insert: 35; min: 1; remove: 40; task: 90670
+Test #6
+Input data size: 1200 elements
+search: 64; insert: 34; min: 1; remove: 46; task: 116530
+search: 67; insert: 32; min: 1; remove: 44; task: 111539
+search: 59; insert: 36; min: 1; remove: 43; task: 114125
+search: 61; insert: 33; min: 1; remove: 41; task: 118676
+search: 66; insert: 32; min: 1; remove: 46; task: 112936
+Test #7
+Input data size: 1400 elements
+search: 66; insert: 37; min: 1; remove: 47; task: 138755
+search: 70; insert: 35; min: 2; remove: 45; task: 136698
+search: 71; insert: 35; min: 1; remove: 46; task: 135638
+search: 67; insert: 33; min: 1; remove: 48; task: 131373
+search: 65; insert: 37; min: 1; remove: 45; task: 139151
+Test #8
+Input data size: 1600 elements
+search: 72; insert: 37; min: 1; remove: 47; task: 157783
+search: 69; insert: 38; min: 1; remove: 49; task: 159332
+search: 73; insert: 38; min: 1; remove: 49; task: 163195
+search: 70; insert: 36; min: 2; remove: 48; task: 155189
+search: 74; insert: 37; min: 1; remove: 49; task: 162737
+Test #9
+Input data size: 1800 elements
+search: 77; insert: 40; min: 2; remove: 51; task: 186828
+search: 76; insert: 40; min: 0; remove: 53; task: 180409
+search: 71; insert: 39; min: 1; remove: 50; task: 182563
+search: 74; insert: 39; min: 2; remove: 48; task: 178535
+search: 75; insert: 36; min: 2; remove: 48; task: 179726
+Test #10
+Input data size: 2000 elements
+search: 80; insert: 39; min: 1; remove: 52; task: 205928
+search: 76; insert: 40; min: 2; remove: 51; task: 198894
+search: 75; insert: 42; min: 2; remove: 52; task: 204224
+search: 78; insert: 42; min: 1; remove: 53; task: 205212
+search: 81; insert: 38; min: 1; remove: 51; task: 209870
+Test #11
+Input data size: 2200 elements
+search: 81; insert: 43; min: 1; remove: 55; task: 231041
+search: 77; insert: 41; min: 1; remove: 52; task: 227800
+search: 85; insert: 39; min: 2; remove: 54; task: 225394
+search: 80; insert: 42; min: 1; remove: 53; task: 227825
+search: 79; insert: 43; min: 2; remove: 52; task: 228454
+Test #12
+Input data size: 2400 elements
+search: 84; insert: 42; min: 2; remove: 54; task: 249219
+search: 86; insert: 39; min: 1; remove: 55; task: 254685
+search: 78; insert: 44; min: 2; remove: 52; task: 253987
+search: 82; insert: 43; min: 2; remove: 54; task: 248229
+search: 83; insert: 46; min: 1; remove: 57; task: 251730
+Test #13
+Input data size: 2600 elements
+search: 83; insert: 44; min: 2; remove: 55; task: 279213
+search: 88; insert: 45; min: 2; remove: 56; task: 272745
+search: 84; insert: 42; min: 1; remove: 55; task: 271640
+search: 79; insert: 45; min: 1; remove: 58; task: 274787
+search: 91; insert: 44; min: 2; remove: 54; task: 278215
+Test #14
+Input data size: 2800 elements
+search: 92; insert: 44; min: 1; remove: 57; task: 301627
+search: 84; insert: 43; min: 2; remove: 57; task: 297684
+search: 85; insert: 44; min: 2; remove: 56; task: 304527
+search: 89; insert: 44; min: 2; remove: 55; task: 298728
+search: 86; insert: 49; min: 1; remove: 59; task: 296080
+Test #15
+Input data size: 3000 elements
+search: 88; insert: 47; min: 2; remove: 57; task: 328962
+search: 91; insert: 45; min: 2; remove: 58; task: 319316
+search: 85; insert: 46; min: 1; remove: 57; task: 327057
+search: 87; insert: 46; min: 2; remove: 60; task: 323572
+search: 92; insert: 45; min: 1; remove: 57; task: 318100
+Test #16
+Input data size: 3200 elements
+search: 93; insert: 45; min: 1; remove: 59; task: 342739
+search: 90; insert: 49; min: 2; remove: 59; task: 344878
+search: 94; insert: 43; min: 2; remove: 59; task: 350701
+search: 88; insert: 48; min: 1; remove: 56; task: 353911
+search: 86; insert: 48; min: 2; remove: 61; task: 346722
+Test #17
+Input data size: 3400 elements
+search: 93; insert: 48; min: 2; remove: 58; task: 371262
+search: 88; insert: 45; min: 1; remove: 61; task: 374123
+search: 97; insert: 47; min: 2; remove: 58; task: 370143
+search: 91; insert: 48; min: 2; remove: 62; task: 372913
+search: 91; insert: 49; min: 2; remove: 60; task: 373265
+Test #18
+Input data size: 3600 elements
+search: 90; insert: 48; min: 2; remove: 61; task: 398886
+search: 96; insert: 50; min: 2; remove: 59; task: 398766
+search: 89; insert: 50; min: 1; remove: 63; task: 394982
+search: 94; insert: 47; min: 2; remove: 60; task: 400335
+search: 98; insert: 46; min: 2; remove: 60; task: 391392
+Test #19
+Input data size: 3800 elements
+search: 95; insert: 50; min: 2; remove: 63; task: 425285
+search: 93; insert: 48; min: 1; remove: 61; task: 421317
+search: 99; insert: 51; min: 2; remove: 61; task: 419188
+search: 97; insert: 47; min: 2; remove: 63; task: 423461
+search: 89; insert: 49; min: 2; remove: 59; task: 419316
+Test #20
+Input data size: 4000 elements
+search: 94; insert: 50; min: 2; remove: 62; task: 445049
+search: 98; insert: 50; min: 2; remove: 63; task: 448100
+search: 98; insert: 49; min: 2; remove: 62; task: 442783
+search: 93; insert: 51; min: 2; remove: 61; task: 449434
+search: 97; insert: 48; min: 1; remove: 63; task: 448470
+Test #21
+Input data size: 4200 elements
+search: 91; insert: 49; min: 2; remove: 63; task: 474715
+search: 100; insert: 49; min: 2; remove: 60; task: 472316
+search: 98; insert: 52; min: 2; remove: 65; task: 471355
+search: 96; insert: 50; min: 2; remove: 63; task: 469588
+search: 102; insert: 51; min: 2; remove: 64; task: 470421
+Test #22
+Input data size: 4400 elements
+search: 101; insert: 52; min: 2; remove: 65; task: 493776
+search: 96; insert: 50; min: 2; remove: 64; task: 501998
+search: 95; insert: 51; min: 1; remove: 61; task: 500655
+search: 103; insert: 51; min: 3; remove: 66; task: 497950
+search: 98; insert: 51; min: 2; remove: 62; task: 490604
+Test #23
+Input data size: 4600 elements
+search: 97; insert: 51; min: 2; remove: 65; task: 526743
+search: 102; insert: 53; min: 2; remove: 66; task: 520926
+search: 103; insert: 50; min: 2; remove: 67; task: 523780
+search: 96; insert: 54; min: 2; remove: 61; task: 519674
+search: 101; insert: 50; min: 2; remove: 63; task: 520939
+Test #24
+Input data size: 4800 elements
+search: 100; insert: 54; min: 2; remove: 64; task: 546501
+search: 101; insert: 50; min: 2; remove: 63; task: 551664
+search: 98; insert: 53; min: 2; remove: 62; task: 546843
+search: 104; insert: 51; min: 2; remove: 69; task: 545198
+search: 101; insert: 53; min: 2; remove: 67; task: 548614
+Test #25
+Input data size: 5000 elements
+search: 100; insert: 53; min: 2; remove: 66; task: 576105
+search: 99; insert: 53; min: 3; remove: 65; task: 573654
+search: 108; insert: 52; min: 2; remove: 65; task: 569998
+search: 97; insert: 53; min: 1; remove: 66; task: 568481
+search: 105; insert: 52; min: 2; remove: 65; task: 578872
+Test #26
+Input data size: 5200 elements
+search: 98; insert: 54; min: 2; remove: 66; task: 599009
+search: 103; insert: 51; min: 2; remove: 69; task: 597914
+search: 107; insert: 55; min: 2; remove: 65; task: 600841
+search: 104; insert: 52; min: 2; remove: 64; task: 601812
+search: 103; insert: 54; min: 2; remove: 67; task: 595479
+Test #27
+Input data size: 5400 elements
+search: 104; insert: 53; min: 1; remove: 70; task: 628987
+search: 109; insert: 56; min: 2; remove: 66; task: 626643
+search: 99; insert: 53; min: 2; remove: 66; task: 619092
+search: 103; insert: 55; min: 2; remove: 67; task: 622733
+search: 104; insert: 52; min: 3; remove: 65; task: 626529
+Test #28
+Input data size: 5600 elements
+search: 103; insert: 56; min: 2; remove: 67; task: 651291
+search: 105; insert: 52; min: 2; remove: 68; task: 648448
+search: 105; insert: 54; min: 3; remove: 70; task: 651184
+search: 100; insert: 57; min: 2; remove: 65; task: 653070
+search: 110; insert: 52; min: 1; remove: 67; task: 649455
+Test #29
+Input data size: 5800 elements
+search: 110; insert: 54; min: 2; remove: 68; task: 678789
+search: 98; insert: 57; min: 2; remove: 67; task: 671589
+search: 106; insert: 56; min: 2; remove: 66; task: 677112
+search: 109; insert: 50; min: 2; remove: 71; task: 676974
+search: 106; insert: 56; min: 2; remove: 67; task: 679454
+Test #30
+Input data size: 6000 elements
+search: 104; insert: 55; min: 2; remove: 68; task: 705250
+search: 104; insert: 56; min: 2; remove: 69; task: 702082
+search: 108; insert: 55; min: 2; remove: 67; task: 698039
+search: 111; insert: 57; min: 2; remove: 68; task: 706203
+search: 106; insert: 53; min: 2; remove: 70; task: 702098
+Test #31
+Input data size: 6200 elements
+search: 103; insert: 58; min: 2; remove: 67; task: 723701
+search: 108; insert: 55; min: 2; remove: 72; task: 731251
+search: 109; insert: 55; min: 2; remove: 70; task: 732938
+search: 108; insert: 55; min: 2; remove: 68; task: 730460
+search: 110; insert: 55; min: 2; remove: 67; task: 726050
+Test #32
+Input data size: 6400 elements
+search: 109; insert: 56; min: 2; remove: 71; task: 759300
+search: 106; insert: 55; min: 2; remove: 69; task: 752195
+search: 114; insert: 59; min: 2; remove: 69; task: 754301
+search: 108; insert: 54; min: 2; remove: 69; task: 754362
+search: 104; insert: 56; min: 2; remove: 69; task: 755434
+Test #33
+Input data size: 6600 elements
+search: 104; insert: 57; min: 2; remove: 70; task: 779017
+search: 112; insert: 59; min: 3; remove: 68; task: 785246
+search: 110; insert: 54; min: 2; remove: 70; task: 777472
+search: 110; insert: 58; min: 2; remove: 69; task: 781167
+search: 109; insert: 54; min: 2; remove: 72; task: 784943
+Test #34
+Input data size: 6800 elements
+search: 112; insert: 55; min: 2; remove: 73; task: 811705
+search: 108; insert: 56; min: 2; remove: 69; task: 805062
+search: 108; insert: 60; min: 2; remove: 68; task: 811494
+search: 111; insert: 57; min: 2; remove: 74; task: 802085
+search: 111; insert: 56; min: 3; remove: 68; task: 809540
+Test #35
+Input data size: 7000 elements
+search: 110; insert: 58; min: 3; remove: 71; task: 830208
+search: 114; insert: 61; min: 2; remove: 70; task: 836012
+search: 106; insert: 56; min: 2; remove: 72; task: 836719
+search: 109; insert: 57; min: 2; remove: 69; task: 830548
+search: 114; insert: 54; min: 2; remove: 72; task: 838405
+Test #36
+Input data size: 7200 elements
+search: 112; insert: 57; min: 2; remove: 72; task: 858799
+search: 112; insert: 58; min: 3; remove: 70; task: 862137
+search: 114; insert: 59; min: 2; remove: 71; task: 856283
+search: 107; insert: 58; min: 2; remove: 73; task: 867240
+search: 112; insert: 56; min: 2; remove: 70; task: 860826
+Test #37
+Input data size: 7400 elements
+search: 108; insert: 59; min: 2; remove: 69; task: 888099
+search: 113; insert: 58; min: 1; remove: 75; task: 889596
+search: 110; insert: 56; min: 3; remove: 73; task: 883729
+search: 113; insert: 58; min: 2; remove: 70; task: 885799
+search: 117; insert: 59; min: 3; remove: 71; task: 890824
+Test #38
+Input data size: 7600 elements
+search: 113; insert: 58; min: 2; remove: 74; task: 919531
+search: 113; insert: 57; min: 2; remove: 71; task: 918809
+search: 114; insert: 59; min: 2; remove: 71; task: 909517
+search: 114; insert: 59; min: 3; remove: 72; task: 909647
+search: 110; insert: 58; min: 2; remove: 72; task: 914067
+Test #39
+Input data size: 7800 elements
+search: 114; insert: 61; min: 3; remove: 73; task: 944874
+search: 116; insert: 58; min: 2; remove: 70; task: 940415
+search: 111; insert: 58; min: 2; remove: 75; task: 940289
+search: 113; insert: 57; min: 2; remove: 71; task: 938061
+search: 114; insert: 59; min: 2; remove: 73; task: 941903
+Test #40
+Input data size: 8000 elements
+search: 112; insert: 60; min: 2; remove: 73; task: 967836
+search: 115; insert: 59; min: 3; remove: 71; task: 966741
+search: 115; insert: 58; min: 2; remove: 72; task: 971786
+search: 116; insert: 60; min: 2; remove: 74; task: 969494
+search: 113; insert: 58; min: 2; remove: 74; task: 964321
+Test #41
+Input data size: 8200 elements
+search: 115; insert: 60; min: 2; remove: 72; task: 999089
+search: 110; insert: 61; min: 2; remove: 75; task: 995411
+search: 116; insert: 60; min: 3; remove: 73; task: 989244
+search: 115; insert: 57; min: 2; remove: 73; task: 995055
+search: 118; insert: 58; min: 2; remove: 73; task: 995716
+Test #42
+Input data size: 8400 elements
+search: 116; insert: 59; min: 2; remove: 75; task: 1019310
+search: 114; insert: 57; min: 2; remove: 74; task: 1027030
+search: 114; insert: 60; min: 2; remove: 75; task: 1024430
+search: 119; insert: 60; min: 3; remove: 72; task: 1016411
+search: 114; insert: 62; min: 2; remove: 70; task: 1022398
+Test #43
+Input data size: 8600 elements
+search: 115; insert: 62; min: 3; remove: 74; task: 1050813
+search: 118; insert: 60; min: 2; remove: 73; task: 1052879
+search: 115; insert: 59; min: 2; remove: 73; task: 1048141
+search: 116; insert: 61; min: 2; remove: 73; task: 1042086
+search: 116; insert: 58; min: 2; remove: 76; task: 1051345
+Test #44
+Input data size: 8800 elements
+search: 118; insert: 61; min: 2; remove: 74; task: 1075368
+search: 116; insert: 59; min: 2; remove: 75; task: 1078520
+search: 117; insert: 61; min: 3; remove: 74; task: 1079709
+search: 115; insert: 59; min: 2; remove: 76; task: 1075117
+search: 117; insert: 61; min: 2; remove: 72; task: 1071501
+Test #45
+Input data size: 9000 elements
+search: 117; insert: 61; min: 2; remove: 76; task: 1106084
+search: 120; insert: 62; min: 3; remove: 73; task: 1101307
+search: 117; insert: 60; min: 2; remove: 75; task: 1102475
+search: 117; insert: 60; min: 2; remove: 73; task: 1105291
+search: 115; insert: 60; min: 3; remove: 75; task: 1100939
+Test #46
+Input data size: 9200 elements
+search: 116; insert: 60; min: 3; remove: 75; task: 1131999
+search: 115; insert: 58; min: 2; remove: 75; task: 1130397
+search: 121; insert: 63; min: 2; remove: 75; task: 1131908
+search: 118; insert: 62; min: 3; remove: 75; task: 1123332
+search: 119; insert: 61; min: 2; remove: 75; task: 1134803
+Test #47
+Input data size: 9400 elements
+search: 120; insert: 63; min: 2; remove: 72; task: 1152591
+search: 114; insert: 63; min: 3; remove: 78; task: 1158645
+search: 119; insert: 59; min: 2; remove: 73; task: 1159232
+search: 120; insert: 60; min: 3; remove: 76; task: 1153403
+search: 118; insert: 61; min: 2; remove: 77; task: 1164997
+Test #48
+Input data size: 9600 elements
+search: 119; insert: 62; min: 2; remove: 76; task: 1185397
+search: 123; insert: 62; min: 2; remove: 75; task: 1180861
+search: 116; insert: 62; min: 3; remove: 80; task: 1189784
+search: 119; insert: 59; min: 2; remove: 74; task: 1189122
+search: 118; insert: 62; min: 3; remove: 73; task: 1180415
+Test #49
+Input data size: 9800 elements
+search: 118; insert: 60; min: 3; remove: 79; task: 1210183
+search: 116; insert: 60; min: 2; remove: 72; task: 1212570
+search: 119; insert: 63; min: 2; remove: 75; task: 1208000
+search: 120; insert: 61; min: 3; remove: 76; task: 1214107
+search: 124; insert: 65; min: 2; remove: 78; task: 1217894
+Test #50
+Input data size: 10000 elements
+search: 122; insert: 62; min: 2; remove: 77; task: 1241066
+search: 119; insert: 63; min: 3; remove: 80; task: 1239214
+search: 123; insert: 61; min: 3; remove: 75; task: 1241148
+search: 119; insert: 64; min: 2; remove: 75; task: 1236791
+search: 116; insert: 60; min: 2; remove: 74; task: 1241811
