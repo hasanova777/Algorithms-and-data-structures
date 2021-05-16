@@ -1,0 +1,499 @@
+Test #1
+Enter n: 3
+6 5
+1 5
+2 1
+Enter the coordinates of the point: 4 0
+NO
+Time taken by algorithm: 26347
+
+Test #2
+Enter n: 3
+6 5
+2 4
+5 1
+Enter the coordinates of the point: 7 2
+NO
+Time taken by algorithm: 33966
+
+Test #3
+Enter n: 3
+6 3
+2 6
+1 2
+Enter the coordinates of the point: 3 2
+NO
+Time taken by algorithm: 80159
+
+Test #4
+Enter n: 3
+7 1
+2 6
+1 1
+Enter the coordinates of the point: 3 3
+YES
+Time taken by algorithm: 53703
+
+Test #5
+Enter n: 3
+2 8
+1 0
+4 2
+Enter the coordinates of the point: 2 3
+YES
+Time taken by algorithm: 58270
+
+Test #6
+Enter n: 4
+5 3
+5 6
+1 5
+2 1
+Enter the coordinates of the point: 3 1
+NO
+Time taken by algorithm: 70959
+
+Test #7
+Enter n: 4
+5 3
+4 5
+1 4
+2 0
+Enter the coordinates of the point: 2 6
+NO
+Time taken by algorithm: 56391
+
+Test #8
+Enter n: 4
+2 3
+4 3
+5 6
+1 6
+Enter the coordinates of the point: 5 5
+NO
+Time taken by algorithm: 88902
+
+Test #9
+Enter n: 4
+4 1
+4 3
+3 4
+1 4
+Enter the coordinates of the point: 3 3
+YES
+Time taken by algorithm: 51463
+
+Test #10
+Enter n: 4
+6 3
+5 7
+1 5
+2 1
+Enter the coordinates of the point: 4 5
+YES
+Time taken by algorithm: 64154
+
+Test #11
+Enter n: 5
+2 1
+4 2
+5 4
+2 5
+1 3
+Enter the coordinates of the point: 4 1
+NO
+Time taken by algorithm: 105576
+
+Test #12
+Enter n: 5
+4 2
+6 2
+5 4
+3 5
+2 3
+Enter the coordinates of the point: 6 3
+NO
+Time taken by algorithm: 64110
+
+Test #13
+Enter n: 5
+2 6
+5 6
+7 7
+6 9
+3 10
+Enter the coordinates of the point: 2 9
+NO
+Time taken by algorithm: 90727
+
+Test #14
+Enter n: 5
+2 6
+5 6
+7 7
+6 9
+3 10
+Enter the coordinates of the point: 2 9
+NO
+Time taken by algorithm: 90727
+
+Test #15
+Enter n: 5
+6 3
+7 7
+4 10
+1 8
+1 3
+Enter the coordinates of the point: 1 4
+YES
+Time taken by algorithm: 135927
+
+Test #16
+Enter n: 6
+1 1
+3 1
+6 3
+6 7
+4 8
+1 6
+Enter the coordinates of the point: 5 8
+NO
+Time taken by algorithm: 116814
+
+Test #17
+Enter n: 6
+3 1
+6 1
+8 6
+4 7
+2 6
+2 3
+Enter the coordinates of the point: 1 5
+NO
+Time taken by algorithm: 71806
+
+Test #18
+Enter n: 6
+5 3
+8 6
+8 9
+7 12
+2 9
+2 5
+Enter the coordinates of the point: 7 3
+NO
+Time taken by algorithm: 136359
+
+Test #19
+Enter n: 6
+3 4
+6 4
+8 7
+6 9
+2 8
+1 5
+Enter the coordinates of the point: 2 5
+YES
+Time taken by algorithm: 98126
+
+Test #20
+Enter n: 6
+4 1
+7 3
+8 5
+6 7
+3 6
+1 4
+Enter the coordinates of the point: 6 5
+YES
+Time taken by algorithm: 121727
+
+Test #21
+Enter n: 7
+1 1
+4 1
+7 2
+9 5
+7 8
+3 9
+0 5
+Enter the coordinates of the point: 8 3
+NO
+Time taken by algorithm: 190036
+
+Test #22
+Enter n: 7
+1 1
+4 1
+7 2
+9 5
+7 8
+3 9
+0 5
+Enter the coordinates of the point: 1 7
+NO
+Time taken by algorithm: 185271
+
+Test #23
+Enter n: 7
+1 1
+4 1
+7 2
+9 5
+7 8
+3 9
+0 5
+Enter the coordinates of the point: 5 9
+NO
+Time taken by algorithm: 142350
+
+Test #24
+Enter n: 7
+3 2
+6 2
+8 4
+7 8
+5 9
+2 8
+1 5
+Enter the coordinates of the point: 6 7
+YES
+Time taken by algorithm: 108662
+
+Test #25
+Enter n: 7
+3 2
+6 2
+8 4
+7 8
+5 9
+2 8
+1 5
+Enter the coordinates of the point: 3 8
+YES
+Time taken by algorithm: 111663
+
+Test #26
+Enter n: 8
+2 1
+5 1
+7 3
+7 5
+6 7
+3 8
+1 7
+0 5
+Enter the coordinates of the point: 7 6
+NO
+Time taken by algorithm: 353390
+
+Test #27
+Enter n: 8
+2 1
+5 1
+7 3
+6 5
+4 6
+2 5
+1 4
+1 2
+Enter the coordinates of the point: 5 7
+NO
+Time taken by algorithm: 104854
+
+Test #28
+Enter n: 8
+3 3
+7 3
+8 6
+7 8
+5 9
+3 8
+2 7
+2 5
+Enter the coordinates of the point: 7 9
+NO
+Time taken by algorithm: 157590
+
+Test #29
+Enter n: 8
+6 1
+7 2
+7 5
+5 8
+2 8
+0 7
+0 5
+3 2
+Enter the coordinates of the point: 5 5
+YES
+Time taken by algorithm: 180821
+
+Test #30
+Enter n: 8
+4 1
+5 3
+6 6
+5 8
+2 9
+0 7
+1 4
+2 2
+Enter the coordinates of the point: 4 7
+YES
+Time taken by algorithm: 412718
+
+Test #31
+Enter n: 9
+1 1
+5 1
+8 3
+9 7
+7 9
+3 9
+1 8
+0 6
+0 3
+Enter the coordinates of the point: 7 2
+NO
+Time taken by algorithm: 233695
+
+Test #32
+Enter n: 9
+2 1
+5 1
+8 3
+9 7
+7 8
+3 8
+1 8
+0 6
+1 3
+Enter the coordinates of the point: 1 9
+NO
+Time taken by algorithm: 235182
+
+Test #33
+Enter n: 9
+2 1
+5 0
+9 2
+9 7
+8 9
+5 9
+3 8
+1 6
+0 4
+Enter the coordinates of the point: 9 8
+NO
+Time taken by algorithm: 226902
+
+Test #34
+Enter n: 9
+3 2
+5 2
+7 4
+8 6
+7 7
+5 8
+3 8
+1 6
+1 4
+Enter the coordinates of the point: 5 6
+YES
+Time taken by algorithm: 557754
+
+Test #35
+Enter n: 9
+7 0
+8 2
+8 7
+6 8
+4 8
+2 7
+1 5
+2 2
+4 1
+Enter the coordinates of the point: 4 7
+YES
+Time taken by algorithm: 161358
+
+Test #36
+Enter n: 10
+5 0
+7 2
+8 4
+7 6
+5 7
+2 7
+1 6
+0 4
+0 2
+2 1
+Enter the coordinates of the point: 8 2
+NO
+Time taken by algorithm: 243989
+
+Test #37
+Enter n: 10
+4 1
+5 1
+7 2
+8 3
+7 6
+4 7
+2 7
+1 6
+1 4
+2 2
+Enter the coordinates of the point: 1 7
+NO
+Time taken by algorithm: 123470
+
+Test #38
+Enter n: 10
+3 0
+6 0
+8 1
+9 3
+9 5
+7 7
+5 8
+3 7
+1 5
+1 2
+Enter the coordinates of the point: 7 8
+NO
+Time taken by algorithm: 201941
+
+Test #39
+Enter n: 10
+4 0
+7 1
+9 3
+10 5
+8 7
+5 8
+3 7
+1 5
+0 3
+1 1
+Enter the coordinates of the point: 5 4
+YES
+Time taken by algorithm: 248942
+
+Test #40
+Enter n: 10
+0 4
+1 3
+3 2
+6 1
+8 3
+9 5
+8 7
+6 7
+3 6
+1 5
+Enter the coordinates of the point: 2 4
+YES
+Time taken by algorithm: 496374
